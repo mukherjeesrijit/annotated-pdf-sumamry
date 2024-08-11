@@ -1,0 +1,8 @@
+streamlit
+google-auth
+google-api-python-client
+PyMuPDF
+pandas
+langchain-community
+fpdf
+markdown2
