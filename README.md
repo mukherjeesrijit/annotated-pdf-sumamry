@@ -1,6 +1,11 @@
 # Annotated PDF Summary
 
-**Annotated PDF Summary** is a web application designed to process and summarize annotated PDF documents using advanced language models. This app enables users to upload PDFs, extract and organize comments and text, generate summaries, and download the results in Markdown format. It's particularly useful for research purposes, where users need to manage and analyze large volumes of annotated documents. This uses Llama3.1 to extract your annotated texts and comments to generate a summary of your observations into a markdown file.
+**Annotated PDF Summary** is a web application designed to process and summarize annotated PDF documents using advanced language models. This app enables users to upload PDFs, extract and organize comments and text, generate summaries, and download the results in Markdown format. It's particularly useful for research purposes, where users need to manage and analyze large volumes of annotated documents. This uses Llama3.1 to extract your annotated texts and comments to generate a summary of your observations into a markdown file. This app helps you to do the following:
+
+* upload a pdf with comments, or
+* upload the google drive pdf id, 
+
+and help you summarize the annotated portions in the pdf along with the annotations.
 
 ## Features
 
