@@ -22,7 +22,7 @@ def prompt(example, text, comment, llm):
     return out
 
 def download_pdf_from_drive(file_id):
-    credentials_file = 'pdf-llm-432218-93ae22879bee.json'
+    credentials_file = 'credentials.json' #download this from Google Cloud Console 
     # Authenticate using the service account
     creds = service_account.Credentials.from_service_account_file(credentials_file, scopes=['https://www.googleapis.com/auth/drive.readonly'])
     service = build('drive', 'v3', credentials=creds)
