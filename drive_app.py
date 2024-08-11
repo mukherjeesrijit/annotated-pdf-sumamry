@@ -3,13 +3,13 @@ from helper import download_pdf_from_drive, process_pdf, extract_markdown, promp
 from langchain_community.llms import Ollama
 
 # Streamlit app
-st.title("Personalized PDF Synopsis by Llama")
+st.title("Annotated PDF Summary by Llama")
 st.write("Developed by [Srijit Mukherjee](https://www.linkedin.com/in/srijit-mukherjee/). Code available at [Github](https://github.com/mukherjeesrijit/annotated-pdf-summary).")
 
-tabs = st.tabs(["Process", "Summary"])
+tabs = st.tabs(["PDF Process", "Annotated Summary"])
 
 with tabs[0]:
-    st.header("Process")
+    st.header("PDF Process")
 
     file_id = st.text_input("Google Drive File ID")
 
@@ -50,7 +50,7 @@ with tabs[0]:
             st.error("Please provide the Google Drive file ID.")
 
 with tabs[1]:
-    st.header("Summary")
+    st.header("Annotated Summary")
 
     # Check if Markdown content is available
     if 'markdown_content' in st.session_state:
